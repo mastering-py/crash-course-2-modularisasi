@@ -43,8 +43,8 @@ luas_segita = alas * tinggi / 2
 print(f'\nMenghitung luas segitiga menggunakan 2 fungsi, argumen dan input')
 def hitung_luas_segitiga(alas, tinggi):
     luas_segitiga = alas * tinggi / 2
-    return luas_segitiga
-    # print(f'Segitiga dengan alas = {alas} dan tinggi = {tinggi} memiliki luas = {luas_segitiga}')  # print dapat juga ditampung disini, asalkan return dihilangkan
+    # return luas_segitiga
+    print(f'Segitiga dengan alas = {alas} dan tinggi = {tinggi} memiliki luas = {luas_segitiga}')  # print dapat juga ditampung disini, asalkan return dihilangkan
 
 def Utama():
     # Cara 1:
@@ -55,12 +55,16 @@ def Utama():
     # print(a)
 
     # Cara 3:
+    # a = int(input("Masukkan alas: "))
+    # b = int(input("Masukkan tinggi: "))
+    # # print(hitung_luas_segitiga(a, b))
+    # # atau
+    # c = hitung_luas_segitiga(a, b)
+    # print(f'Segitiga dengan alas = {a} dan tinggi = {b} memiliki luas = {c}')
+
+    # Cara 4:
     a = int(input("Masukkan alas: "))
     b = int(input("Masukkan tinggi: "))
-    # print(hitung_luas_segitiga(a, b))
-    # atau
-    c = hitung_luas_segitiga(a, b)
-    print(f'Segitiga dengan alas = {a} dan tinggi = {b} memiliki luas = {c}')
-
+    hitung_luas_segitiga(a, b)  # print ditampung pada fungsi hitung_luas_segitiga() diatas tanpa menggunakan return
 Utama()
 
